@@ -2,46 +2,59 @@
 <html lang="en-us">
 
 <head>
-    <title>Coding Quiz</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/style.css">
+  <title>Coding Quiz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 
 <body>
-    <!-- header -->
-    <header>
-        <h1 class="info">
-            Press Start to Take a Timed Coding Quiz
-        </h1>
+  <!-- header -->
+  <header>
+    <h1 class="info">
+      Press Start to Take a Timed Coding Quiz
+    </h1>
 
-    </header>
-   
-    <!-- body -->
-    <main>
-        <!-- Sidebar for hi scroes -->
-       <aside id="prevScores" class="prevScores">
-                    <h2>Hi Scores</h2>       
-   
-       </aside>
-       
-        
+  </header>
 
-
-   
-        <div class="quiz">
-             <textarea class="questions" style="margin:0px; height: 162px; width: 550px"></textarea>
-               
-        
+  <main>
+    <!-- Sidebar for hi scroes -->
+    <aside id="topScores" class="topScores">
+      <h2>Top 3 Scores</h2>
+      <div class=hiScores>0 </div>
+    </aside>
+    <section class="card">
+      <div class="card-header">
+        <button class="start-button">Start</button>
+        <div class="card timer">
+          <div class="timer-text">
+            <div class="large-font timer-count">45</div>
+            <h3>seconds remaining</h3>
+          </div>
         </div>
-    </main>
-<!-- footer -->
-<footer id="contact-me" class="Contact-me">
+      </div>
+      <div class="card-body">
+        <textarea class="questions" style="margin: 40px; height: 350px; width: 700px"></textarea>
+      </div>
+      <div class="card-footer">
+        <h2> Your Results:</h2>
+        <h4>You answered <span class="corAns"> __ </span>questions correctly!</h4>
+      </div>
+    </section>
+
+
+    </div>
+
+    </section>
+
+
+  </main>
+  <!-- footer -->
+  <footer class="footer">
     <h2>Thanks for Playing!</h2>
-</footer>
-<script src= "assets/script.js"></script>
+  </footer>
+  <script src="assets/script.js"></script>
 </body>
 
 </html>
-    
