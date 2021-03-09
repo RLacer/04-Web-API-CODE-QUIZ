@@ -2,59 +2,42 @@
 <html lang="en-us">
 
 <head>
-  <title>Coding Quiz</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="assets/style.css">
+    <title>Coding Quiz</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
-  <!-- header -->
-  <header>
-    <h1 class="info">
-      Press Start to Take a Timed Coding Quiz
-    </h1>
+    <!-- start quiz button -->
+    <div class="start_btn"><button>Start</button></div>
 
-  </header>
-
-  <main>
-    <!-- Sidebar for hi scroes -->
-    <aside id="topScores" class="topScores">
-      <h2>Top 3 Scores</h2>
-      <div class=hiScores>0 </div>
-    </aside>
-    <section class="card">
-      <div class="card-header">
-        <button class="start-button">Start</button>
-        <div class="card timer">
-          <div class="timer-text">
-            <div class="large-font timer-count">45</div>
-            <h3>seconds remaining</h3>
-          </div>
+    <!-- about info -->
+    <div class="about_info">
+        <div class="about_title">
+            <span>How It Works!</span>
         </div>
-      </div>
-      <div class="card-body">
-        <textarea class="questions" style="margin: 40px; height: 350px; width: 700px"></textarea>
-      </div>
-      <div class="card-footer">
-        <h2> Your Results:</h2>
-        <h4>You answered <span class="corAns"> __ </span>questions correctly!</h4>
-      </div>
-    </section>
-
-
+        <div class="about_list">
+            <div class="about">1. Click the start timer</div>
+            <div class="about">2. When a wrong anser is selected, the timer runs until a different question is answered correctly </div>
+            <div class="about">3. Score is based on correct answers </div>
+        </div>
+        <div class="buttons">
+            <button class="exit">Exit</button>
+            <button class="continue">Continue</button>
+        
+        </div>
     </div>
 
-    </section>
 
 
-  </main>
-  <!-- footer -->
-  <footer class="footer">
-    <h2>Thanks for Playing!</h2>
-  </footer>
-  <script src="assets/script.js"></script>
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
