@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+.card {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: flex-start;
+      
+    }
+/* header section */
+header {
+display: flex;
+justify-content: center;
+padding: 40px;
+background-color: darkkhaki;
+ color: Black;
+  
+  }
+
+ 
+/* body */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1;
+  }
+
+.hide {
+  display: none;
+}
+
+   
+    .questions header{
+      position: relative;
+      z-index:  99;;
+      height: 70px;
+      padding: 0 30px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 10px 10px 0 0;
+      box-shadow: 0px 0px 10px 0px silver;
+    }
+    
+    .questions header .title{
+      font-size: 25px;
+      font-weight: 700;
+    
+    }
+    
+    .questions header .timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 65px;
+    background: peru;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    padding: 0 8px;
+    
+    }
+    
+    .questions header .timer .timer_text{
+      font-weight: 700;
+      font-size: 20px;
+      user-select: none;
+    }
+    
+   .questions header .timer .timer_seconds{
+      font-weight: 775;
+      font-size: 22px;
+      background: lightyellow;
+      text-align: center;
+      line-height: 25px;
+      border-radius: 8px;
+      border: 1px solid darkgoldenrod;
+      user-select: none;
+    }
+    
+   .questions section{
+      padding: 25px 25px 25px 25px;
+      background: silver;
+    
+    }
+    
+    .questions section .start_text{
+      font-size: 30px;
+      font-weight: 700;
+    
+    }
+    
+    .questions section .answer_list{
+      padding: 20px 0
+      display: block;
+    
+    }
+    
+    section .answer_list .poss_answer{
+    background: lightyellow;
+    border:  1px solid darkgoldenrod;
+    border-radius: 8px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    
+    }
+    section .answer_list .poss_answer:hover{
+      background: goldenrod; 
+    }
+    
+    
+    
+    .answer_list .poss_answer:last-child{
+      margin-bottom: 0px;
+    
+    
+    }
+    
+    .answer_list .poss_answer .icon_yes{
+    height: 25px;
+    width: 25px;
+    border: 3px solid transparent;
+    border-radius: 25%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    
+    
+    
+    }
+    .answer_list .poss_answer .icon_yes{
+    color: green;
+      border-color: green;
+    
+    }
+    
+    .answer_list .poss_answer .icon_no{
+      color: red;
+        border-color:red;
+    }  
+    /* styling the quiz area footer */
+    
+    .quiz_area footer{
+     height: 80px;
+     width: 100%;
+     padding: 0 25px;
+     display: flex;
+     align-items: center;
+     justify-content:  space-between;
+    
+    }
+    
+    .quiz_area footer .score_total span{
+      display: flex;
+      user-select: none;
+    
+    }
+    .quiz_area footer .score_total span p{
+      font-weight: 600;
+      padding: 0 5px;
+    }
+    
+    .quiz_area footer .score_total span p:first-child:{
+      padding-left: 0px;
+    
+    }
+    
+    
+    footer.buttons{
+     margin: 0 8px;
+    height: 45px;
+    width: 125px;
+    border: 3px solid white;
+    background: darkkhaki;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    
+    }
+    
+    footer.buttons:hover{
+        background: goldenrod; 
+       }
+    /* scoring results box */
+    .score_results{
+    
+     background: white;
+     width: 575px;
+     padding: 25px 25px;
+     border-radius: 10px; 
+     display: flex;
+     text-align: center;
+     align-items: center;
+     flex-direction: column;
+     justify-content: space-between;
+    }
+    
+    .score_results .icon{
+    
+      font-size: 75px;
+    color: blue;
+    margin-bottom: 5px;
+    
+    
+    }
+    
+    .score_results .finished, .initials{
+      font-size: 25px;
+      font-weight: 400;
+      margin-bottom: 10px;
+    }
+    
+    .score_results span p{
+      display: flex;
+      margin: 10px 0;
+      font-size: 25px;
+    font-weight: 400;  
+    }
+    .score_results .buttons{
+      display: flex;
+      margin: 20px 20px;
+    }
+    .score_results .buttons button{
+      margin: 8px 8px;
+      height: 50px;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: 300;
+      border-radius: 10px;
+      cursor: pointer;
+       
+    }
+    
+    
+    
+    
+    /* styling the quiz area footer */
+    
+
+
+  /* footer */
+
+  footer {
+    display: flex;
+    justify-content: center;
+      width: 100%;
+      bottom: 0;
+      padding: 20px;
+      text-align: center;
+      background: darkkhaki;
+      color: Black;
+      margin-top: 0;
+
+  }
+  .card{
+    max-width: 75%;
+      flex: 4;
+      background-color: darkkhaki;
+      padding: 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+     
+    } 
+    button {
+
+      background-color:chartreuse; 
+      border-radius: 8px;
+      color: #13293d;
+      font-size: 2em;
+      letter-spacing: 0.21px;
+      line-height: 16px;
+      max-width: 255px;
+      padding: 20px 52px;
+      text-align: center;
+      transition-duration: 0.15s;
+            margin-top: 0.6em;
+    }
+.large-font {
+  font-size: 3.5em;
+  text-align:center;
+}
+
+.timer {
+  height: 240px;
+  padding: 20px;
+  background: #411539;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.timer-text {
+  padding: 55px;
+}
+
+
+.footer {
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+
+
+/* add media query */
+
+@media screen and (max-width: 992px) {
+  
+  .quiz {
+      background-color: orange;
+  }
+  /* Change the header color */
+  h2 {
+    background: darksalmon;
+  }
+
+/* Cards are stacked on top of each other at 768px or smaller */
+@media screen and (max-width: 768px) {
+  
+  .quiz {
+      background-color: darkred;
+  }
+    
+  /* Change the header color */
+  h2 {
+    background: #8ac4ff;
+  } 
+}
+}

@@ -2,42 +2,53 @@
 <html lang="en-us">
 
 <head>
-    <title>Coding Quiz</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+  <title>Coding Quiz</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://kit.fontawesome.com/ae69852f35.js" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
-    <!-- start quiz button -->
-    <div class="start_btn"><button>Start</button></div>
-
-    <!-- about info -->
-    <div class="about_info">
-        <div class="about_title">
-            <span>How It Works!</span>
-        </div>
-        <div class="about_list">
-            <div class="about">1. Click the start timer</div>
-            <div class="about">2. When a wrong anser is selected, the timer runs until a different question is answered correctly </div>
-            <div class="about">3. Score is based on correct answers </div>
-        </div>
-        <div class="buttons">
-            <button class="exit">Exit</button>
-            <button class="continue">Continue</button>
-        
-        </div>
+  <div class="scores">
+    <a href="hi_scores.html">Top Scorees</a>
+  </div>
+  <div class="timer">
+    Timer: <span id="time">0</span>
+  </div>
+  <div class="wrapper">
+    <div id="startscreen" class="start">
+      <h1>Take a Coding Quiz!</h1>
+      <p>Answer the questions. Time is deducted for incorrect answers.</p>
+      <button id="start">Start</button>
     </div>
 
 
 
+    <div id="questions" class="hide">
+      <h2 id="question_title"></h2>
+      <div id="choices" class="choices"></div>
+
+    </div>
+
+    <div id="end_screen" class="hide">
+
+      <h2>You Finished the Quiz!</h2>
+      <p>Your Final Score is <span id="final_score"></span>.</p>
+      <p>Enter Initials: <input type="text" id="initials"></p>
+      <button id="submit">Save Initials and Score</button>
+    </div>
+
+    <div id="feedback" class="feedback hide"></div>
+
+  </div>
 
 
 
+<script src="assets/questions.js"></script>
+<script src="assets/script.js"></script>
 
-
-    <script src="script.js"></script>
 </body>
 
 </html>
