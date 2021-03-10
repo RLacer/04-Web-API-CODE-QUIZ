@@ -9,7 +9,7 @@ body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      justify-content: flex-start;
+      justify-content: center;
       
     }
  
@@ -19,7 +19,21 @@ body {
       flex-wrap: wrap;
       flex-grow: 1;
   }
+.wrapper{
+margin: 100px auto 0 auto;
+max-width: 600px;
 
+}
+.timer{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.scores{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
 .hide {
   display: none;
 }
