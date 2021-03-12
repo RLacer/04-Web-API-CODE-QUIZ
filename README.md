@@ -22,4 +22,4 @@ https://rlacer.github.io/04-Web-API-CODE-QUIZ/
 
 
 ## Screenshot
-![screenshot](assets\images\codingquiz.png)
+![screenshot](assets/images/codingquiz.png)
