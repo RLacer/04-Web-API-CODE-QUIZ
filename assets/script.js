@@ -98,7 +98,7 @@ function submitFinal() {
 
         hiScores.push(newScore);
         localStorage.setItem("hiScores", JSON.stringify(hiScores));
-        location.href = "hiscores.html";
+        location.href = "topscores.html";
 
 
     }

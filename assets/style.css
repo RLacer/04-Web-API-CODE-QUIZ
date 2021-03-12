@@ -43,20 +43,23 @@ max-width: 600px;
  button, .choice {
   max-height: 150px;
   min-width: 50%;
-  border-bottom: 3px solid orange; 
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   padding: 0 35px;
   font-size: 30px;
   font-weight: 700;
-  background-color: orange;
+  background-color: darkgoldenrod;
+  border: solid 3px silver;
+  border-radius: 15%;
  }
  
-button:hover {
-background-color: darkgoldenrod;
+button:hover, .choice:hover {
+background-color: green;
 cursor: pointer;
 }
-.choice:hover{
-  background-color: darkgoldenrod;
-  cursor: pointer;
+
+.feedback {
+  font-size: 50px;
+  color: whitesmoke;
 }

@@ -39,7 +39,7 @@ var questions = [
 },
 {
     title: "What does the || stand for in the following: length < 8 || length > 128?",
-    choices: [" or", " and", " .if", " else"],
+    choices: [" or", " and", " if", " else"],
     answer: " or"
    
 },
