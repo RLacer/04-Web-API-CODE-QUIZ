@@ -26,12 +26,6 @@ var questions = [
 },
 
 {
-    title: "What does the getElementById use?",
-    choices: [" css", " html", " js", " api"],
-    answer: " html"
-   
-},
-{
     title: "What does NaN stand for?",
     choices: [" Now and Next", " Not a Number", " Number and Next", " Number andn Next = True "],
     answer: " Not a Number"
