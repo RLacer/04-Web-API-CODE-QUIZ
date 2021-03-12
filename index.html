@@ -9,20 +9,27 @@
   <script src="https://kit.fontawesome.com/ae69852f35.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <div class="scores">
-    <a href="hi_scores.html">Top Scores</a>
-  </div>
-  <div class="timer">
-    Timer: <span id="time">0</span>
-  </div>
-  <div class="wrapper">
-    <div id="startscreen" class="start">
-      <h1>Take a Coding Quiz!</h1>
-      <p>Answer the questions. Time is deducted for incorrect answers.</p>
-      <button id="start">Start</button>
-    </div>
 
+<body>
+ 
+    <div class="scores">
+      <a href="hiscores.html">Top Scores</a>
+    </div>
+    <div class="timer">
+      Timer: <span id="time">0</span>
+    </div>
+    <div class="wrapper">
+      <div id="startscreen" class="start">
+        <h1>Take a Coding Quiz!</h1>
+        <ol class="instructions">
+          <li>Answer the questions.</li>
+          <li>Time is deducted for incorrect answers.</li>
+          <li>Score is calculated by time left on  the timer.</li>
+        </ol>
+        <h1>Good Luck!</h1>
+        <button id="start">Start</button>
+      </div>
+ 
 
 
     <div id="questions" class="hide">
@@ -40,13 +47,12 @@
     </div>
 
     <div id="feedback" class="feedback hide"></div>
-
-  </div>
-
+   
 
 
-<script src="assets/questions.js"></script>
-<script src="assets/script.js"></script>
+
+  <script src="assets/questions.js"></script>
+  <script src="assets/script.js"></script>
 
 </body>
 
